@@ -18,11 +18,11 @@ public class Message {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @OneToMany
+    @ManyToOne
     @JoinColumn(name = "sender_id", nullable = false)
     private User userSend;
 
-    @OneToMany
+    @ManyToOne
     @JoinColumn(name = "receiver_id", nullable = false)
     private User userReceive;
 
