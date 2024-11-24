@@ -1,4 +1,4 @@
-package entity;
+package com.thuan.smartshop.entity;
 
 import jakarta.persistence.*;
 import lombok.*;

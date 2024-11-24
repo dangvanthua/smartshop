@@ -1,4 +1,4 @@
-package entity;
+package com.thuan.smartshop.entity;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonManagedReference;

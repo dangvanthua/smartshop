@@ -1,6 +1,6 @@
-package entity;
+package com.thuan.smartshop.entity;
 
-import constant.PaymentStatus;
+import com.thuan.smartshop.constant.PaymentStatus;
 import jakarta.persistence.*;
 import lombok.*;
 

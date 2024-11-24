@@ -1,4 +1,4 @@
-package constant;
+package com.thuan.smartshop.constant;
 
 public enum DataType {
     TEXT,

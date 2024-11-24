@@ -1,0 +1,42 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /api/v1
+
+#  ?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+
+spring:
+  application:
+    name: smartshop
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/smartshop
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password:
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate:
+      dialect: org.hibernate.dialect.MYSQL8Dialect
+      format_sql: true
+
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 50MB
+
+  messages:
+    basename: i18n/messages
+    encoding: UTF-8
+    default-locale: en
+
+  flyway:
+    locations: classpath:/db/migration,classpath:/dev/db/migration
+    baseline-on-migrate: true
+    baseline-version: 0
+
+

@@ -1,6 +1,6 @@
-package entity;
+package com.thuan.smartshop.entity;
 
-import constant.DataType;
+import com.thuan.smartshop.constant.DataType;
 import jakarta.persistence.*;
 import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
